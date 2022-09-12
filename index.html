@@ -316,8 +316,107 @@
     //     let minsum = sum - max;
     //     let maxsum = sum - min;
     //     console.log(minsum + " " + maxsum);
-    // } // If it's not working remove the function....
+    // } // If it's not working remove the function...
     // miniMaxSum();
+
+
+
+// Find Birthday Cake Candles Tallest and count of those ....
+    // let candles = [2,6,7,12,3,1,12,9,12];
+    // function birthdayCakeCandles(candles){
+    //     let tallest = 0;
+    //     let count = 0;
+
+    //     for(let i=0; i<candles.length; i++){
+    //         if(tallest < candles[i]){
+    //             tallest = candles[i];
+    //         }
+    //     }
+    //     for(let i=0; i<candles.length; i++){
+    //         if(tallest == candles[i]){
+    //             count++;
+    //         }
+    //     }
+    //     return count;
+    // }
+
+    // console.log(birthdayCakeCandles(candles));
+
+
+
+// Time Conversion 12-hour AM/PM format, convert it to military (24-hour).
+
+// { 12AM -> 00
+//   1AM to 12PM -> do nothing
+//   1Pm to 11PM -> take hour add 12 }.
+
+// let s = '12:01:00PM';
+
+// function timeConverstion(s){
+//     let amPm = s.charAt(8)
+//     let timeFormat = "";
+    
+//     if(amPm == 'A'){
+//         if(s.substring(0,2) == '12'){
+//             timeFormat = '00'
+//         }else{
+//             timeFormat = s.substring(0,2)
+//         }
+//     }else{
+//         if(s.substring(0,2) == 12){
+//             timeFormat = s.substring(0,2)
+//         }else{
+//             timeFormat = parseInt(s.substring(0,2), 10) + 12;
+//             // took hour using s.substring(0,2) and added 12...
+//         }
+//     }
+//     return timeFormat + s.substring(2,8) // returned for '00:00' format
+// }
+
+
+
+// Counting Valleys i.e: steps = 8, path = [DDUUUUDD]
+
+// function countingValley(steps, path){
+//     let valleys = 0;
+//     let altitude = 0; // 0 is the sea level indicator.
+
+//     for(let i=0; i < steps; i++){
+//         if(path[i] == 'D'){
+//             // If steps are towards Downhill decrement altitude.
+//             altitude--;
+//         }else{ // for Uphill steps
+//             if(altitude == -1){
+//                 // Counting Valleys
+//                 valleys++;
+//             }
+//             altitude++;
+//         }
+//     }
+//     return valleys;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
